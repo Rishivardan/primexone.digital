@@ -306,6 +306,28 @@ nav {
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
+.article-image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.article-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.article-card:hover .article-image img {
+    transform: scale(1.05);
+}
+
+.article-card-content {
+    padding: 2rem;
+}
+
 .article-category {
     display: inline-block;
     padding: 0.4rem 1rem;
@@ -509,3 +531,4 @@ footer {
         flex-direction: column;
     }
 }
+
